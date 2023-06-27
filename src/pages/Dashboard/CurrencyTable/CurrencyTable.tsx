@@ -1,6 +1,5 @@
 import { CurrencyTableProps } from "../../../types/common"
 import TableHead from "./TableHead"
-import mockData from '../../../assets/MockData.json';
 import CurrencyItem from "./CurrencyItem";
 
 function CurrencyTable({ data }: CurrencyTableProps) {
@@ -20,7 +19,7 @@ function CurrencyTable({ data }: CurrencyTableProps) {
                     </tr>
                 </thead>
                 <tbody className=''>
-                    {mockData.map((item, idx) => {
+                    {data.map((item, idx) => {
                         return <CurrencyItem key={idx} data={item} />
                     })}
                 </tbody>

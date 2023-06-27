@@ -7,7 +7,7 @@ const FormatterInstance = new Formatter();
 
 function CurrencyItem({ data }: { data: CurrencyItemProps }) {
     if (!data) return null;
-    const { id, rank, symbol, name, supply, volumeUsd24Hr, marketCapUsd, changePercent24Hr, vwap24Hr, explorer, priceUsd } = data;
+    const {  rank, symbol, name, supply, volumeUsd24Hr, marketCapUsd, changePercent24Hr, vwap24Hr, priceUsd } = data;
 
     const formattedPrice = FormatterInstance.formatCurrency(priceUsd);
     const formattedSupply = FormatterInstance.formatUnit(supply);

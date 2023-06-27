@@ -28,15 +28,13 @@ class Formatter {
                 divisor = this.repeatNTimes('0', 4);
                 break;
             case 7:
-                console.log(7)
                 unit = 'm'
                 divisor = this.repeatNTimes('0', 6);
                 break;
             case 8:
-                console.log(8)
+    
                 unit = 'm';
                 divisor = this.repeatNTimes('0', 6);
-                console.log(divisor)
                 break;
             case 9:
                 unit = 'm';
